@@ -1,0 +1,281 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Playfair Display";
+}
+
+#main {}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 2px 5px #ccc;
+  width: 100%;
+  height: 54px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 12px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: black;
+
+}
+
+#top-nav-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.top-nav a:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.slider-section {
+  position: relative;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  max-width: 1600px;
+  min-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider-section img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-section-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 16px 24px;
+  margin: 10px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  opacity: 0.6;
+}
+
+/* About */
+.section-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.about-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-container {
+  width: 50%;
+  float: left;
+  padding: 10px 20px;
+}
+
+.img-container img {
+  opacity: 0.8;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.text__container {
+  width: 50%;
+  float: left;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.text__container-heading {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  padding-bottom: 32px;
+}
+
+.text__container-product {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  padding-bottom: 16px;
+}
+
+.text__container-sub--info,
+.text__container-info {
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text__container-sub--info {
+  color: grey;
+}
+
+span {
+  color: #000;
+  background-color: #f1f1f1;
+  line-height: 1.5;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+/* Menu */
+.menu__container {
+  padding-top: 70px;
+}
+
+.menu__container-list {
+  width: 50%;
+  float: left;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.menu__container-heading {
+  margin: 12px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  padding-bottom: 32px;
+}
+
+.menu__container-name {
+  margin: 12px 0;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  padding-bottom: 12px;
+  text-align: justify;
+}
+
+.menu__container-price {
+  margin: 12px 0;
+  padding-bottom: 24px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #757575;
+}
+
+.menu__container-img {
+  width: 50%;
+  float: left;
+  padding: 10px 20px;
+}
+
+.menu__container-img img {
+  width: 90%;
+  border-radius: 5px;
+  opacity: 0.8;
+  padding-bottom: 70px;
+}
+
+hr {
+  opacity: 0.4;
+}
+
+/* Contact */
+.contact__container {
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+
+.contact__container-heading {
+  margin-bottom: 48px;
+}
+
+.contact__container-heading h1 {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.contact__container-service {
+  margin: 16px 0;
+}
+
+.contact__container-service p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.contact__container-local {
+  margin: 16px 0;
+}
+
+.contact__container-local h2 {
+  font-size: 20px;
+  color: #607d8b;
+  font-weight: 600;
+}
+
+.contact__container-connection {
+  margin: 16px 0;
+}
+
+.contact__container-connection p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.contact__container input[type="number"],
+.contact__container input[type="text"],
+.contact__container input[type="datetime-local"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: 16px;
+  padding: 16px 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  background-color: #f1f1f1;
+  margin: 16px 0;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 32px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.footer a {
+  color: black;
+}
